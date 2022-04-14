@@ -1,5 +1,11 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="XAFDemoOne">
-  <Views>
-  </Views>
+  <BOModel>
+    <Class Name="SimpleProjectManager.Module.BusinessObjects.Marketing.Customer" ImageName="BO_Customer" />
+    <Class Name="SimpleProjectManager.Module.BusinessObjects.Marketing.Testimonial" ImageName="BO_Document" />
+  </BOModel>
+  <NavigationItems ShowImages="True" NavigationStyle="Accordion" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="21.2.6.0" IsNewNode="True" />
+  </SchemaModules>
 </Application>
