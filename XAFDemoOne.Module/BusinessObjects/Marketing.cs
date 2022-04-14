@@ -113,12 +113,23 @@ namespace SimpleProjectManager.Module.BusinessObjects.Marketing
             get { return id; }
             protected set { SetProperty(ref id, value); }
         }
+
+        //Anterior al cambio
+        //string quote;
+        //public string Quote
+        //{
+        //    get { return quote; }
+        //    set { SetProperty(ref quote, value); }
+        //}
+
         string quote;
+        [FieldSize(FieldSizeAttribute.Unlimited)]
         public string Quote
         {
             get { return quote; }
             set { SetProperty(ref quote, value); }
         }
+
         string highlight;
         [FieldSize(512)]
         public string Highlight
