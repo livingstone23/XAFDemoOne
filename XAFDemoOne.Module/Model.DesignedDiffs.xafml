@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="XAFDemoOne">
-  <BOModel>
-    <Class Name="SimpleProjectManager.Module.BusinessObjects.Marketing.Customer" ImageName="BO_Customer" />
-    <Class Name="SimpleProjectManager.Module.BusinessObjects.Marketing.Testimonial" ImageName="BO_Document" />
-  </BOModel>
-  <NavigationItems ShowImages="True" NavigationStyle="Accordion" />
+  <NavigationItems ShowImages="True" NavigationStyle="Accordion">
+    <Items>
+      <Item Id="Marketing">
+        <Items>
+          <Item Id="Customer_ListView" ImageName="BO_Employee" />
+          <Item Id="Testimonial_ListView" ImageName="BO_Folder" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <SchemaModules>
     <SchemaModule Name="SystemModule" Version="21.2.6.0" IsNewNode="True" />
   </SchemaModules>

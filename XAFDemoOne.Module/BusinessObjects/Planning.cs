@@ -7,7 +7,7 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 
-namespace SimpleProjectManager.Module.BusinessObjects.Planning
+namespace XAFDemoOne.Module.BusinessObjects.Planning
 {
     [NavigationItem("Planning")]
     public class ProjectTask : BaseObject
@@ -64,7 +64,7 @@ namespace SimpleProjectManager.Module.BusinessObjects.Planning
 
 
 
-namespace SimpleProjectManager.Module.BusinessObjects.Planning
+namespace XAFDemoOne.Module.BusinessObjects.Planning
 {
     // ...
     [NavigationItem("Planning")]

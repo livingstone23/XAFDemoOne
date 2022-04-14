@@ -1,20 +1,15 @@
-﻿using System;
-using System.Data;
-using System.Linq;
-using System.Data.Entity;
-using System.Data.Common;
-using System.Data.Entity.Core.Objects;
-using System.Data.Entity.Infrastructure;
-using System.ComponentModel;
-using DevExpress.ExpressApp.EF.Updating;
-using DevExpress.Persistent.BaseImpl.EF;
-using DevExpress.ExpressApp.Design;
+﻿using DevExpress.ExpressApp.Design;
 using DevExpress.ExpressApp.EF.DesignTime;
-using DevExpress.Persistent.BaseImpl.EF.PermissionPolicy;
-using SimpleProjectManager.Module.BusinessObjects.Marketing;
+using DevExpress.ExpressApp.EF.Updating;
+using System;
+using System.Data.Common;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using XAFDemoOne.Module.BusinessObjects.Marketing;
 
-namespace XAFDemoOne.Module.BusinessObjects {
-	public class XAFDemoOneContextInitializer : DbContextTypesInfoInitializerBase {
+namespace XAFDemoOne.Module.BusinessObjects
+{
+    public class XAFDemoOneContextInitializer : DbContextTypesInfoInitializerBase {
 		protected override DbContext CreateDbContext() {
 			DbContextInfo contextInfo = new DbContextInfo(typeof(XAFDemoOneDbContext), new DbProviderInfo(providerInvariantName: "System.Data.SqlClient", providerManifestToken: "2008"));
             return contextInfo.CreateInstance();

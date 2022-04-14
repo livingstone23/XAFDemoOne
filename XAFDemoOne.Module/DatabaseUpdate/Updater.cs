@@ -7,8 +7,8 @@ using DevExpress.ExpressApp.Updating;
 using DevExpress.Xpo;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
-using SimpleProjectManager.Module.BusinessObjects.Marketing;
-using SimpleProjectManager.Module.BusinessObjects.Planning;
+using XAFDemoOne.Module.BusinessObjects.Marketing;
+using XAFDemoOne.Module.BusinessObjects.Planning;
 
 namespace XAFDemoOne.Module.DatabaseUpdate {
     // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Updating.ModuleUpdater

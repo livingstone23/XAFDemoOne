@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="SimpleProjectManager.Module.BusinessObjects.Marketing.Customer" ImageName="BO_Customer" />
+    <Class Name="SimpleProjectManager.Module.BusinessObjects.Marketing.Testimonial" ImageName="BO_Document" />
+  </BOModel>
+</Application>

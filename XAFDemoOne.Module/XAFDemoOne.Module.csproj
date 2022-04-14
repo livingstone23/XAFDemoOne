@@ -94,6 +94,9 @@
   <ItemGroup>
     <Compile Include="BusinessObjects\Marketing.cs" />
     <Compile Include="BusinessObjects\Planning.cs" />
+    <Compile Include="Controllers\ProjectTaskController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>

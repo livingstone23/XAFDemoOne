@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 
-namespace SimpleProjectManager.Module.BusinessObjects.Marketing
+namespace XAFDemoOne.Module.BusinessObjects.Marketing
 {
     [NavigationItem("Marketing")]
     public class Customer : INotifyPropertyChanged
@@ -96,7 +96,7 @@ namespace SimpleProjectManager.Module.BusinessObjects.Marketing
 
 
 
-namespace SimpleProjectManager.Module.BusinessObjects.Marketing
+namespace XAFDemoOne.Module.BusinessObjects.Marketing
 {
     // ...
     [NavigationItem("Marketing")]
