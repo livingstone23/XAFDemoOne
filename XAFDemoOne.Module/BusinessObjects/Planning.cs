@@ -1,14 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
+using System;
+using System.Drawing;
 
 namespace XAFDemoOne.Module.BusinessObjects.Planning
 {
+
+
+
+    [Appearance("Completed1", TargetItems = "Subject",
+    Criteria = "Status = 'Completed'", FontStyle = FontStyle.Strikeout, FontColor = "ForestGreen")]
+    [Appearance("Completed2", TargetItems = "*;Status;AssignedTo",
+    Criteria = "Status = 'Completed'", Enabled = false)]
+    [Appearance("InProgress", TargetItems = "Subject;AssignedTo",
+    Criteria = "Status = 'InProgress'", BackColor = "LemonChiffon")]
+    [Appearance("Deferred", TargetItems = "Subject",
+    Criteria = "Status = 'Deferred'", BackColor = "MistyRose")]
+    [RuleCriteria("EndDate >= StartDate")]
+
     [NavigationItem("Planning")]
     public class ProjectTask : BaseObject
     {
